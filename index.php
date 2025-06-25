@@ -1,39 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienes Raices</title>
-    <link rel="stylesheet" href="build/css/app.css">
-</head>
-<body>
+<?php 
 
-    <header class="header inicio">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="/">
-                    <img src="build/img/logo.svg" alt="Logotipo de Bienes Raices">
-                </a>
+    $inicio = true;
+    include 'includes/templates/header.php' 
+?>
 
-                <div class="mobile-menu">
-                    <img src="build/img/barras.svg" alt="Icono menu responsive">
-                </div>
-
-                <div class="derecha">
-                    <img class="dark-mode-boton" src="build/img/dark-mode.svg">
-                    <nav class="navegacion">
-                        <a href="nosotros.html">Nosotros</a>
-                        <a href="anuncios.html">Anuncios</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </div>
-
-            </div> <!-- .barra -->
-
-            <h1>Venta de Casas y Departamentos Exclusivos de Lujo</h1>
-        </div>
-    </header>
 
     <main class="contendor seccion">
         <h1>Más Sobre Nosotros</h1>
@@ -86,7 +56,7 @@
                             <p>4</p>
                         </li>  
                     </ul>
-                    <a href="anuncio.html" class="boton boton-amarillo-block">
+                    <a href="anuncio.php" class="boton boton-amarillo-block">
                         Ver Propiedad
                     </a>
                 </div> <!-- .contenido-anuncio -->
@@ -119,7 +89,7 @@
                             <p>4</p>
                         </li>  
                     </ul>
-                    <a href="anuncio.html" class="boton boton-amarillo-block">
+                    <a href="anuncio.php" class="boton boton-amarillo-block">
                         Ver Propiedad
                     </a>
                 </div> <!-- .contenido-anuncio -->
@@ -152,7 +122,7 @@
                             <p>4</p>
                         </li>  
                     </ul>
-                    <a href="anuncio.html" class="boton boton-amarillo-block">
+                    <a href="anuncio.php" class="boton boton-amarillo-block">
                         Ver Propiedad
                     </a>
                 </div> <!-- .contenido-anuncio -->
@@ -160,14 +130,14 @@
         </div><!-- .contenedor-anuncios -->
 
         <div class="alinear-derecha">
-            <a href="anuncios.html" class="boton boton-verde">Ver Todas</a>
+            <a href="anuncios.php" class="boton boton-verde">Ver Todas</a>
         </div>
     </section>
 
     <section class="imagen-contacto">
             <h2>Encuentra la casa de tus sueños</h2>
             <p>Llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad.</p>
-            <a href="contacto.html" class="boton boton-amarillo">Contactar</a>
+            <a href="contacto.php" class="boton boton-amarillo">Contactar</a>
         </div> <!-- .contenido-imagen -->
     </section>
 
@@ -184,7 +154,7 @@
                     </picture>
                 </div>
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="entrada.php">
                         <h4>Terraza en el techo de tu casa</h4>
                         <p class="informacion-meta">Escrito el: <span>20/10/2023</span> por: <span>Admin</span></p>
                         <p>Consejos para construir una terraza en el techo de tu casa con los mejores materiales y ahorrando dinero.</p>
@@ -201,7 +171,7 @@
                     </picture>
                 </div>
                 <div class="texto-entrada">
-                    <a href="entrada.html">
+                    <a href="entrada.php">
                         <h4>Guia para la decoracion de tu hogar</h4>
                         <p class="informacion-meta">Escrito el: <span>20/10/2023</span> por: <span>Admin</span></p>
                         <p>Consejos para decorar tu hogar con los mejores materiales y ahorrando dinero.</p>
@@ -222,19 +192,4 @@
         </section>
     </div>
 
-    <footer class="footer seccion">
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a href="nosotros.html">Nosotros</a>
-                <a href="anuncios.html">Anuncios</a>
-                <a href="blog.html">Blog</a>
-                <a href="contacto.html">Contacto</a>
-             </nav>
-        </div> <!-- .contenedor-footer -->
-            <p class="copyright">Todos los derechos reservados 2023 &copy; Bienes Raices</p>
-    </footer>
-
-    <script src="build/js/bundle.min.js"></script>
-    
-</body>
-</html>
+<?php include 'includes/templates/footer.php' ?>
