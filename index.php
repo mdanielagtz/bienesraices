@@ -3,7 +3,6 @@
     incluirTemplate('header', $inicio = true);
 ?>
 
-
     <main class="contendor seccion">
         <h1>Más Sobre Nosotros</h1>
         <div class="iconos-nosotros">   
