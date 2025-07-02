@@ -1,6 +1,5 @@
 <?php
     //Importar la conexion
-    require __DIR__ . '/../config/databases.php';
     $db = conectarDB();
     //Consultar
     $query = "SELECT * FROM propiedades LIMIT {$limite}";

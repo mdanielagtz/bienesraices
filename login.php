@@ -1,6 +1,6 @@
 <?php 
 
-    require 'includes/config/databases.php';
+    require 'includes/app.php';
     $db = conectarDB();
 
     $errores = [];
@@ -59,7 +59,6 @@
 
     
     //Incluye el header
-    require 'includes/funciones.php';
     incluirTemplate('header');
 ?>
 
@@ -88,6 +87,5 @@
     </main>
 
  <?php 
-    require 'includes/funciones.php';
     incluirTemplate('footer');
 ?>

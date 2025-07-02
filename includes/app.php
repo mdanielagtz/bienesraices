@@ -1,9 +1,9 @@
 <?php
 
-if (!defined('TEMPLATES_URL')) {
-    define('TEMPLATES_URL', __DIR__ . '/templates');
-}
+require 'funciones.php';
+require 'config/databases.php';
+require __DIR__.'/../vendor/autoload.php';
 
-if (!defined('FUNCIONES_URL')) {
-    define('FUNCIONES_URL', __DIR__ . '/funciones.php');
-}
+use App\Propiedad;
+
+$propiedad = new Propiedad;

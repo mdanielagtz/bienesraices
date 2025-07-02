@@ -1,6 +1,12 @@
 <?php
 
-require 'app.php';
+if (!defined('TEMPLATES_URL')) {
+    define('TEMPLATES_URL', __DIR__ . '/templates');
+}
+
+if (!defined('FUNCIONES_URL')) {
+    define('FUNCIONES_URL', __DIR__ . '/funciones.php');
+}
 
 if (!function_exists('incluirTemplate')) {
     function incluirTemplate(string $nombre, bool $inicio = false) {
