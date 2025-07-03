@@ -15,9 +15,18 @@ if (!function_exists('incluirTemplate')) {
 }
 
 if (!function_exists('estaAutenticado')) {
-    function estaAutenticado(): bool {
+    function estaAutenticado() {
         session_start();
-        $auth = $_SESSION['login'];
-        return $auth ? true : false;
+
+        if(!$_SESSION['login']){
+            header('Location: /');
+        }
     }
+}
+
+function debuguear($variable){
+    echo "<pre>";
+    var_dump($variable);
+    echo "</pre>";
+    exit;
 }
